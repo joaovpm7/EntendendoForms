@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Tabuada</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <label>Digite um Número:</label>
+        <input type="number" id="txtNumero"/> <br>
+        <button type="button" onclick="CalcularTabuada();">Calcular</button>
+        <script>
+            function CalcularTabuada() {
+                var elem_numero = document.getElementById("txtNumero");
+                var tabuada = elem_numero.value;
+
+                for (var i = 1; i <= 10; i++) {
+                    msg += tabuada + " X " + i + " = " + (tabuada * i) + " <br/> ";
+                }
+                var paragrafo = document.getElementById("resultabuada");
+                paragrafo.innerHTML = msg;
+            }
+        </script>
+    </body>
+</html>

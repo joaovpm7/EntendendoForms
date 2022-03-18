@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Entendendo JavaScript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <label>
+            Nome:
+        </label>
+        <input type="text" 
+               id="txtnome"
+               />
+        <br>
+        <label>
+            Sobre Nome:
+        </label>
+        <input type="text" 
+               id="txtSobreNome"
+               />
+        <!--Criar um botão onclick -->
+        <button type="Button" onclick="MostrarNome();">Mostrar Nome</button>
+        <script>
+            function MostrarNome() {
+                var elem_nome = document.getElementById("txtnome");//criei a variavel nome e armazenei todos os dados txtnome
+                var elem_sobrenome = document.getElementById("txtSobreNome");//criei a variavel nome e armazenei todos os dados txtSobreNome
+                var nome = elem_nome.value;//armazenar somente o que o usuario digita (value)
+                var sobrenome = elem_sobrenome.value;//armazenar somente o que o usuario digita (value)
+                window.alert("O nome completo é " + nome + " " + sobrenome);
+            }
+            //alert("Hellow World");
+            //document.write("Meu Primeiro escrito");
+        </script>
+    </body>
+</html>
