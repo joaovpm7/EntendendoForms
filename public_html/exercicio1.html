@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>
+            Formulário
+        </h1>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="txtnome">Nome:</label>
+            <input type="text" id="txtnome" name="home"/>
+            <br>
+            <label for="txtend">Endereço:</label>
+            <input type="text" id="txtend" name="home"/>
+            <br>
+            <label for="txtcid">Cidade:</label>
+            <input type="text" id="txtcid" name="home"/>
+            <br>
+            <label for="sltEstado">Estado:</label>
+            <select id="sltEstado" name="estado">
+                <option value="EM">São Paulo</option>
+                <option value="EM">Espirito Santo</option>
+                <option value="EM">Rio de Janeiro</option>
+                <option value="EM">Minas Gerais</option>
+                <option value="EM">Destrito Federal</option>
+                <option value="EM">Rio Grande do Norte</option>
+            </select>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label>Natureza do Cargo</label><br>
+            <input name="cargo" type="radio" id="rdbGerencia" value="G" />
+            <label for="rdbGerencia">Gerência</label>
+            <input name="cargo" type="radio" id="rdbFinanceiro" value="F" />
+            <label for="rdbFinanceiro">Financeiro</label>
+            <input name="cargo" type="radio" id="rdbRecepcao" value="R" />
+            <label for="rdbRecepcao">Recepção</label>
+            <input name="cargo" type="radio" id="rdbAdmnistrativo" value="A" />
+            <label for="rdbAdmnistrativo">Admnistrativo</label>
+            <input name="cargo" type="radio" id="rdbJuridico" value="J" />
+            <label for="rdbJuridico">Jurídico</label>
+            <br>
+            <br>
+            <label>Área de interesse</label><br>
+            <input name="interesse" type="checkbox" id="rdbComputacao" value="C" />
+            <label for="rdbComputacao">Computação</label>
+            <input name="interesse" type="checkbox" id="rdbBiologia" value="B" />
+            <label for="rdbBiologia">Biologia</label>
+            <input name="interesse" type="checkbox" id="rdbMeioAmbiente" value="M" />
+            <label for="rdbMeioAmbiente">Meio Ambiente</label>
+            <input name="interesse" type="checkbox" id="rdbEngenharia" value="E" />
+            <label for="rdbEngenharia">Engenharia</label>
+            <input name="interesse" type="checkbox" id="rdbHistoria" value="H" />
+            <label for="rdbHistoria">História</label>
+            <br>
+            <br>
+            <label for="txtObs">Mini-Curriculo:</label>
+            <textarea id="txtObs"
+                      name="observacao"
+                      rows="5"
+                      cols="100">
+            </textarea>
+        </fieldset>
+        <br>
+        <button type="button">Enviar</button>
+        <button type="button">Limpar</button>
+    </body>
+</html>
